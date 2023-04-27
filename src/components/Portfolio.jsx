@@ -11,31 +11,37 @@ const Portfolio = () => {
     {
       id: 1,
       src: ArrayDestructuring,
+      alt: "number1"
     },
 
     {
       id: 2,
       src: es6,
+      alt: "number2"
     },
 
     {
       id: 3,
       src: netflixClone,
+      alt: "number3"
     },
 
     {
       id: 4,
       src: nextJs,
+      alt: "number4"
     },
 
     {
       id: 5,
       src: UberClone,
+      alt: "number5"
     },
 
     {
       id: 6,
       src: ReactWeather,
+      alt: "number6"
     },
   ];
 
@@ -55,11 +61,11 @@ const Portfolio = () => {
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
 
 
-          {portfolios.map(({ id, src }) => (
+          {portfolios.map(({ id, src, alt }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
-                alt="es6"
+                alt={alt}
                 className="rounded-md hover:scale-105 duration-200"
               />
               <div className="flex items-center justify-center">
